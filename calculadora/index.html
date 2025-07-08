@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <div id="caixa">
+            <input type="text" id="num" />
+
+            <div class="teclado">
+                <button onclick="analise(7)">7</button>
+                <button onclick="analise(8)">8</button>
+                <button onclick="analise(9)">9</button>
+                <button onclick="analise('+')">+</button>
+
+                <button onclick="analise(4)">4</button>
+                <button onclick="analise(5)">5</button>
+                <button onclick="analise(6)">6</button>
+                <button onclick="analise('-')">-</button>
+
+                <button onclick="analise(1)">1</button>
+                <button onclick="analise(2)">2</button>
+                <button onclick="analise(3)">3</button>
+                <button onclick="analise('*')">x</button>
+
+                <button onclick="analise(0)" class="zero">0</button>
+                <button onclick="calcular()" class="igual">=</button>
+                <button onclick="analise('/')" class="divisao">÷</button>
+            </div>
+        </div>
+    </body>
+
+    <script src="script.js"></script>
+
+</html>

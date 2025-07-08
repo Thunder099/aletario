@@ -1,0 +1,63 @@
+html {
+    display: flex;
+    height: 100vh;
+
+    padding: 1.5rem;
+
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0px;
+}
+
+#caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* estica tudo na largura */
+    justify-content: stretch;
+
+    height: 200px;
+    width: 180px;
+
+    padding: 10px;
+    border-radius: 5px;
+    border: 4px solid rgb(201, 219, 218);
+    background-color: rgb(234, 255, 255);
+}
+
+#caixa input {
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+
+/* organização dos botõezes */
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 colunas de número + 1 de operador */
+    gap: 10px;
+    flex: 1;
+    width: 100%;
+}
+
+.teclado button {
+    width: 100%;
+    height: 100%;
+}
+
+/* O botão 0 vai ocupar 2 colunas */
+.teclado .zero {
+    grid-column: span 2;
+}
+
+/* O botão = ocupa 1 coluna */
+.teclado .igual {
+    grid-column: span 1;
+}
+
+/* O botão ÷ ocupa 1 coluna */
+.teclado .divisao {
+    grid-column: span 1;
+}
